@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class DisabledViewClickEventActivity extends Activity {
     View v1, v2, v3;
@@ -16,9 +17,9 @@ public class DisabledViewClickEventActivity extends Activity {
         v2 = (View) findViewById(R.id.v2);
         v3 = (View) findViewById(R.id.v3);
 
-        setClick(v1, "view 1");
-        setClick(v2, "view 2");
-        setClick(v3, "view 3");
+        setClick(v1, "最 大 的View被点击了");
+        setClick(v2, "中间的View被点击了");
+        setClick(v3, "最 小 的View被点击了");
 
 
         v2.setClickable(false);
@@ -31,6 +32,7 @@ public class DisabledViewClickEventActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.e(">>>", "view clicked " + msg);
+                Toast.makeText(DisabledViewClickEventActivity.this, msg, Toast.LENGTH_SHORT).show();
             }
         });
     }
