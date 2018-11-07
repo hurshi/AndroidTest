@@ -24,6 +24,7 @@ public class DisabledViewClickEventActivity extends Activity {
 
         v2.setClickable(false);
 
+
     }
 
 

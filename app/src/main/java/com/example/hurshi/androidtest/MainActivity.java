@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.hurshi.androidtest.on_intercept_touch_event.OnInterceptTouchEventActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toOtherActivity(R.id.button1, DisabledViewClickEventActivity.class);
+        toOtherActivity(R.id.button2, OnInterceptTouchEventActivity.class);
     }
 
     private void toOtherActivity(int resID, final Class<?> cls) {
