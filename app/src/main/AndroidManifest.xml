@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DisabledViewClickEventActivity" />
+        <activity android:name=".touch_event.DisabledViewClickEventActivity" />
         <activity android:name=".on_intercept_touch_event.OnInterceptTouchEventActivity" />
+        <activity android:name=".scalable.ScalableActivity" />
     </application>
 
 </manifest>

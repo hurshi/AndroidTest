@@ -12,6 +12,7 @@ public class ChildView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        getParent().requestDisallowInterceptTouchEvent(true);
         MotionEventPrinter.printEvent(event, "ChildView");
         return true;
     }

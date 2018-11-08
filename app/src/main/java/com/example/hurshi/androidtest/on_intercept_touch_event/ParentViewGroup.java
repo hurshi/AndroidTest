@@ -13,6 +13,12 @@ public class ParentViewGroup extends RelativeLayout {
 
     int a = 0;
 
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
+
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         MotionEventPrinter.printEvent(ev, a + " ParentViewGroup onInterceptTouchEvent");

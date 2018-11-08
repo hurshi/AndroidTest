@@ -1,10 +1,12 @@
-package com.example.hurshi.androidtest;
+package com.example.hurshi.androidtest.touch_event;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.hurshi.androidtest.R;
 
 public class DisabledViewClickEventActivity extends Activity {
     View v1, v2, v3;
