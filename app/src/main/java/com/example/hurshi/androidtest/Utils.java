@@ -10,7 +10,7 @@ import android.util.TypedValue;
 
 public class Utils {
     public static void toActivity(Context context, Class<?> cls) {
-        context.getApplicationContext().startActivity(new Intent(context, cls));
+        context.startActivity(new Intent(context, cls));
     }
 
     public static float dp2px(float dp) {
