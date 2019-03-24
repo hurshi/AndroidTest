@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <com.example.coordinatelayoutbehaviors.themirrordraw.DrawView
+            android:id="@+id/dLeft"
+            android:layout_width="10dp"
+            android:tag="D_Left"
+            android:layout_height="match_parent"/>
+    <com.example.coordinatelayoutbehaviors.themirrordraw.DrawView
+            android:id="@+id/dRight"
+            android:layout_width="10dp"
+            android:tag="D_Right"
+            android:layout_height="match_parent"/>
+
+    <View android:layout_width="0dp"
+          android:layout_height="0dp"
+          app:layout_behavior="com.example.coordinatelayoutbehaviors.themirrordraw.TheMirrorDrawBehavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

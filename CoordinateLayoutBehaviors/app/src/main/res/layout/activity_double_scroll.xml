@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:id="@+id/s1"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <TextView android:layout_width="match_parent"
+                      android:text="@string/large_text"
+                      android:background="#3000"
+                      android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/s2"
+                android:layout_height="match_parent">
+            <TextView android:layout_width="match_parent"
+                      android:text="@string/large_text"
+                      android:background="#99000000"
+                      android:textColor="#bbb"
+                      android:layout_height="wrap_content"/>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <View android:layout_width="0dp"
+          app:layout_behavior="com.example.coordinatelayoutbehaviors.doublescroll.DoubleScrollBehavior"
+          android:layout_height="0dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
