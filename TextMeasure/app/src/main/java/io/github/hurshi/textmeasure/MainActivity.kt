@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val rects = mutableListOf<Rect>()
         rects.add(Rect(10, 10, 300, 300))
         rects.add(Rect(500, 540, 750, 745))
+        rects.add(Rect(800, 1340, 1200, 1900))
 
         return rects
     }
