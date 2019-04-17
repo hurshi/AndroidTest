@@ -6,11 +6,11 @@
                 android:layout_height="match_parent"
                 android:background="#ddd">
 
-    <io.github.hurshi.textmeasure.HollowTextView
-            android:id="@+id/hollowTextView"
+    <io.github.hurshi.textmeasure.ImageTextView
+            android:id="@+id/imageTextView"
             android:layout_width="match_parent"
             android:layout_margin="20dp"
-            android:layout_height="2000dp"
+            android:layout_height="match_parent"
             android:background="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

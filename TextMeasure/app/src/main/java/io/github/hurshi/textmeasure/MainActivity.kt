@@ -12,18 +12,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        hollowTextView.setDebugMode(true)
-        hollowTextView.setText(getString(R.string.long_str))
-        hollowTextView.setHollows(getRects())
-        hollowTextView.invalidate()
+
+        imageTextView.setText(getString(R.string.long_str))
+        imageTextView.addImage(
+            getDrawable(R.mipmap.lufei),
+            Rect(100, 100, 300, 300)
+        )
+        imageTextView.addImage(
+            getDrawable(R.mipmap.avatar_luffy2),
+            Rect(500, 800, 1000, 1300)
+        )
+        imageTextView.invalidate()
+
+//        hollowTextView.setDebugMode(true)
+//        hollowTextView.setText(getString(R.string.long_str))
+//        hollowTextView.setHollows(getRects())
+//        hollowTextView.invalidate()
     }
 
-    private fun getRects(): List<Rect> {
-        val rects = mutableListOf<Rect>()
-        rects.add(Rect(10, 10, 300, 300))
-        rects.add(Rect(500, 540, 750, 745))
-        rects.add(Rect(800, 1340, 1200, 1900))
-
-        return rects
-    }
+//    private fun getRects(): List<Rect> {
+//        val rects = mutableListOf<Rect>()
+//        rects.add(Rect(10, 10, 300, 300))
+//        rects.add(Rect(500, 540, 750, 745))
+//        rects.add(Rect(800, 1340, 1200, 1900))
+//
+//        return rects
+//    }
 }
