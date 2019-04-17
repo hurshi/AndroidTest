@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name='TransformTest'
+include ':app', ':buildsrc'
+rootProject.name = 'TransformTest'

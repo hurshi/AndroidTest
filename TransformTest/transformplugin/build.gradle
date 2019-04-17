@@ -1,0 +1,30 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+
+dependencies {
+    //gradle sdk
+    implementation gradleApi()
+    //groovy sdk
+    implementation localGroovy()
+}
+
+
+repositories {
+    mavenCentral()
+}
+//以上都为固定写法
+
+//group和version
+group = 'com.example.transformplugin'
+version = '1.0.0'
+
+//打包到本地或者远程Maven库
+uploadArchives {
+
+    repositories {
+        maven {
+            url "${rootProject.projectDir.absolutePath}/repo"
+        }
+    }
+}
