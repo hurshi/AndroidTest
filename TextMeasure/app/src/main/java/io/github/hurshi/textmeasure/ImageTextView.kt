@@ -36,7 +36,6 @@ class ImageTextView : ViewGroup {
             it.scaleType = ImageView.ScaleType.CENTER_CROP
             it.layoutParams = LayoutParams(imageRect.width(), imageRect.height())
             images[it] = imageRect
-//            it.alpha = 0.3f
         })
         textView.setHollows(images.map { it.value }.toList())
     }
