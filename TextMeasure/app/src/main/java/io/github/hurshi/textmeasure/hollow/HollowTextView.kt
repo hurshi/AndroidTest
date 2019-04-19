@@ -1,4 +1,4 @@
-package io.github.hurshi.textmeasure
+package io.github.hurshi.textmeasure.hollow
 
 import android.content.Context
 import android.graphics.Canvas
@@ -81,7 +81,9 @@ class HollowTextView : View {
         rects?.forEach { exceptRect ->
             if (exceptRect.top > rect.bottom || exceptRect.bottom < rect.top) {
             } else
-                output = exceptIntersectArea(output, Pair(exceptRect.left, exceptRect.right)).toMutableList()
+                output = exceptIntersectArea(output,
+                    Pair(exceptRect.left, exceptRect.right)
+                ).toMutableList()
         }
         if (debugMode) {
             output.forEach {

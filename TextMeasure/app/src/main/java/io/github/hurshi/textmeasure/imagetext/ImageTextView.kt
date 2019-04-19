@@ -1,4 +1,4 @@
-package io.github.hurshi.textmeasure
+package io.github.hurshi.textmeasure.imagetext
 
 import android.content.Context
 import android.graphics.Rect
@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.ViewGroup
 import android.widget.ImageView
+import io.github.hurshi.textmeasure.hollow.HollowTextView
 
 class ImageTextView : ViewGroup {
     constructor(context: Context?) : super(context)

@@ -1,8 +1,9 @@
-package io.github.hurshi.textmeasure
+package io.github.hurshi.textmeasure.imagetext
 
 import android.graphics.Rect
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import io.github.hurshi.textmeasure.R
 import kotlinx.android.synthetic.main.activity_image_text.*
 
 class ImageTextActivity : AppCompatActivity() {

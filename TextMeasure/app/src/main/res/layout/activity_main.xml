@@ -22,6 +22,12 @@
                 android:layout_width="wrap_content"
                 android:text="toImageTextView"
                 android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/btn3"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="toTextDrawView"
+                android:layout_height="wrap_content"/>
 
 
     </LinearLayout>

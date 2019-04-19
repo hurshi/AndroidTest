@@ -6,7 +6,7 @@
                 android:layout_height="match_parent"
                 android:background="#ddd">
 
-    <io.github.hurshi.textmeasure.HollowTextView
+    <io.github.hurshi.textmeasure.hollow.HollowTextView
             android:id="@+id/hollowTextView"
             android:layout_width="match_parent"
             android:layout_margin="20dp"

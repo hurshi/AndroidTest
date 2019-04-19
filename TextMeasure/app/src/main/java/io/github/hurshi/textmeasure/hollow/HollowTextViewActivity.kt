@@ -1,8 +1,9 @@
-package io.github.hurshi.textmeasure
+package io.github.hurshi.textmeasure.hollow
 
 import android.graphics.Rect
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import io.github.hurshi.textmeasure.R
 import kotlinx.android.synthetic.main.activity_hollow_text_view.*
 
 class HollowTextViewActivity : AppCompatActivity() {
