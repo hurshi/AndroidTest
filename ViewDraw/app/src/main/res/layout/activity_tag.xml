@@ -16,6 +16,15 @@
                 android:layout_height="match_parent">
 
             <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:background="#dd0"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="match_parent/20dp"/>
+
+            <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -80,13 +89,24 @@
     <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_weight="1">
-        <io.github.hurshi.viewdraw.tag.TagLayout2
+        <io.github.hurshi.viewdraw.tag.TagLayout
                 android:id="@+id/tagLayout"
                 android:layout_margin="50dp"
                 android:background="#2333"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:background="#dd0"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:text="match_parent/20dp"/>
 
             <Button
                     android:layout_width="wrap_content"
@@ -147,7 +167,7 @@
                     android:background="#888"
                     android:text="w/wrap_content,hello world"/>
 
-        </io.github.hurshi.viewdraw.tag.TagLayout2>
+        </io.github.hurshi.viewdraw.tag.TagLayout>
     </RelativeLayout>
 
 </LinearLayout>
